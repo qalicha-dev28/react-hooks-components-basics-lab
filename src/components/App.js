@@ -1,30 +1,36 @@
 import React from "react";
 
-function NavBar() {
+function Navbar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      <p>Navigation Bar</p>
     </nav>
   );
 }
 
 function Home() {
   return (
+    // This is the line that needs the id="home"
     <div id="home">
-      <h1>Home</h1>
+      <h1>Welcome Home!</h1>
     </div>
   );
 }
 
-{/* write an <About> component here */}
-
+function About() {
+  return (
+    <div id="about">
+      <h2>About</h2>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
